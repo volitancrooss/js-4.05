@@ -31,6 +31,7 @@
 
 let clasificaciones = ["Ana", "Oswaldo", "Raúl", "Celia", "María", "Antonio"];
 console.log("Clasificación inicial: " + clasificaciones);
+
 let antonio = clasificaciones.pop();
 let maria = clasificaciones.pop();
 let celia = clasificaciones.pop();
@@ -43,18 +44,20 @@ clasificaciones.push(antonio);
 
 clasificaciones.pop();
 
-let maria2 = clasificaciones.pop();
-let raul2 = clasificaciones.pop();
-let celia2 = clasificaciones.pop();
+let ana = clasificaciones.shift();
 let oswaldo = clasificaciones.pop();
+let celia2 = clasificaciones.pop();
+let raul2 = clasificaciones.pop();
 
 clasificaciones.push("Roberto");
 clasificaciones.push("Amaya");
 
+clasificaciones.unshift(ana);
+
 clasificaciones.push(oswaldo);
-clasificaciones.push(celia2);
 clasificaciones.push(raul2);
-clasificaciones.push(maria2);
+clasificaciones.push(celia2);
+clasificaciones.push(maria);
 
 clasificaciones.unshift("Marta");
 
